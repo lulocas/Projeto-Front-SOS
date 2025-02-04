@@ -1,0 +1,507 @@
+body{
+    background-color: #F5F3F4;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    height: 100%; 
+    margin: 0;
+    font-family: Inter;
+}
+
+/* logo */
+.logo{
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#logo{
+    height: 25px;
+}
+
+/* Botoes de cadastro e login */
+#botoes{
+    display: flex;
+    margin-left: 67.5%;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.botao{
+    width: 210px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    font-size: 140%;
+    cursor: pointer;
+}
+#login{
+    background-color: #20B174;
+    color: #F5F3F4;
+}
+#login:hover{
+    background-color: #197f54;
+}
+
+/* barra de navegação */
+nav{
+    display: flex;
+    justify-content:space-around;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+    height: 60px;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+}
+.linknav{
+    font-size: 200%;
+    color: #3F3F3F;
+    text-decoration: none;
+    padding-top: 10px;
+}
+.linknav:hover {
+    color: #20B174;
+}
+#aconta{
+    color: #20B174;
+}
+#aconta:hover{
+    color: #197f54;
+}
+#nave{
+    display: flex;
+    width: 98%;
+    margin-left: 20px;
+}
+#botaonav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* parte que vai ficar igual em todas as pags (nav, logo e botoes) */
+#cabeça{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* seção 1 */
+#oi{
+    font-size: 4em;
+    display: flex;
+    color: #20B174;
+    margin-left: 20px;
+}
+#editarconta{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 70px;
+    margin-right: 30px;
+}
+#editar{
+    background-color: #F5F3F4;
+    color: #20B174;
+    border: 5px solid #20B174;
+    border-radius: 25px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#editar:hover{
+    background-color: #ede9eb;
+}
+#circulo{
+    width: 300px;
+    height: 300px;
+    background-color: #3F3F3F;
+    border-radius: 100%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imgtereza{
+    width: 90%;
+    height: 90%;
+}
+#pessoal{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* caixa do sobre */
+#sobre{
+    width: 100%;
+    height: 300px;
+    background-color: lightgray;
+    color: rgb(51, 49, 49);
+    border-radius: 25px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+}
+#infos{
+    display: flex;
+    gap: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* o que esta dentro da caixa sobre */
+#titulosobre{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 5%;
+    height: 80px;
+}
+
+#nome{
+    font-size: 40px;
+    margin-top: 20px;
+}
+#descricao{
+    font-size: 20px;
+    display: block;
+    text-align: justify;
+    width: 90%;
+    margin-left: 5%;
+}
+#pronome{
+    padding-top: 18px;
+    font-size: 20px;
+}
+
+/* xp */
+#xp{
+    color: rgb(51, 49, 49);
+    font-size: 30px; 
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+/* barra de xp */
+#percento{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#barra{
+    width: 15%;
+    height: 40px;
+    border-radius: 25px;
+    background-color: lightgrey;
+    margin-left: 20px;
+}
+#porcentagem{
+    width: 5.5%;
+    height: 40px;
+    position: absolute;
+    background-color: #20B174;
+    border-radius: 25px;
+}
+#porcento{
+    display: flex;
+    margin-top: 8px;
+    font-size: 25px;
+    color: rgb(51, 49, 49);
+}
+
+/* secao 2 */
+#cursos{
+    font-size: 4em;
+    color: #20B174;
+    margin-left: 20px;
+}
+#embreve{
+    display: flex;
+    justify-content: center;
+    font-size: 8em;
+    color: rgb(51, 49, 49);
+}
+/* Videos */
+#videos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 50px;
+}
+.videosclicar{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.capa{
+    max-width: 25%;
+    max-height: 200px;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+}
+.imgcapa{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+.titulovideo{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    width: 600px;
+    flex-direction: column;
+}
+
+.pvideo{
+    font-size: 30px;
+    color: #20B174;
+}
+.pvideo:hover{
+    color:#197f54;
+    cursor: pointer;
+}
+#video4{
+    margin-right: 100px;
+}
+.porcentagem{
+    display: flex;
+    flex-direction: row;
+}
+.barraprogresso{
+    width: 400px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: lightgrey;
+}
+#dezporcento{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    background-color: #20B174;
+    border-radius: 25px;
+}
+#setentaporcento{
+    position: absolute;
+    width: 280px;
+    height: 30px;
+    background-color: #20B174;
+    border-radius: 25px;
+}
+.numeroporcento{
+    display: flex;
+    margin-top: 8px;
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(51, 49, 49);
+}
+
+/* secao 3 */
+#configuracoes{
+    font-size: 4em;
+    color: #20B174;
+    margin-left: 20px;
+}
+
+
+
+/* chat de duvidas */
+#chat{
+    font-size: 30px;
+    color: rgb(51, 49, 49);
+    margin-left: 25px;
+}
+.formcontainer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 177, 116, 0.2);
+    width: 80%;
+    height: 410px;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-radius: 25px;
+    gap: 10px;
+    padding-top: 50px;
+    
+}
+.labelinput{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+    font-size: 30px;
+    color: rgb(51, 49, 49);
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#botaoenviar{
+    width: 15%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #20B174;
+    color: #F5F3F4;
+    font-size: 25px;
+    cursor: pointer;
+}
+#botaoenviar:hover{
+    background-color: #197f54;
+}
+#bottomsend{
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+input{
+    width: 120%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+}
+textarea{
+    width: 120%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+}
+
+/* Duvidas comuns */
+#duvidascomuns{
+    margin-bottom: 5%;
+}
+#tituloduvidas{
+    font-size: 30px;
+    color: rgb(51, 49, 49);
+    margin-left: 25px;
+}
+.caixaduvida{
+    width: 100%;
+    border: 5px solid #20B174; 
+    border-radius: 15px; 
+    background-color: rgba(32, 177, 116, 0.1); 
+    color: rgb(51, 49, 49); 
+    display: flex; 
+    flex-direction: column; 
+}
+h6{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 20px; 
+    margin-bottom: 10px;
+}
+#todascaixas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.details{
+    margin-bottom: 15px;
+    margin-top: 0;
+    padding-top: 0;
+}
+summary { 
+    padding: 5px 0; 
+    cursor: pointer;  
+    margin-left: 20px;
+} 
+summary:hover{
+    color: #166846;
+    cursor: pointer;
+}
+.hideinfo { 
+    padding-top: 10px;
+    margin-left: 20px; 
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #20B174;  
+    color:#F5F3F4; 
+    bottom: 0;
+    left: 0;
+    font-size: 15px;
+    gap: 40px;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 13%;
+}
+.divfooter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#divinfos{
+    margin-right: 5%;
+}
+#afooter{
+    font-size: 15px;
+    color: #F5F3F4;
+    margin-left: 5px;
+}
+#afooter:hover{
+    color: red;
+}
+#simbolossociais{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+#simbinsta{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.divicons{
+    max-width: 80px;
+    max-height: 25px;
+    background-color: #197f54;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divicons:hover{
+    background-color: #164b35;
+}
+.icons{
+    width: 80%;
+    height: 80%;
+}
+
+#email{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+#divsimbemail{
+    margin-top: 16px;
+    max-width: 20px;
+    max-height: 18px;
+}
+#idemail{
+    width: 100%;
+    height: 100%;
+}
+hr{
+    width: 80%;
+}
+#siteby{
+    display: flex;
+    justify-content: center;
+}

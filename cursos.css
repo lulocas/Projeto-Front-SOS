@@ -1,0 +1,346 @@
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #F5F3F4;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    height: 100%; 
+    margin: 0;
+    font-family: Inter;
+}
+
+/* logo */
+.logo{
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#logo{
+    height: 25px;
+}
+
+/* Botoes de cadastro e login */
+#botoes{
+    display: flex;
+    margin-left: 54%;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.botao{
+    width: 210px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    font-size: 140%;
+    cursor: pointer;
+}
+#cadastro{
+    background-color: #20B174;
+    color: #F5F3F4;
+}
+#cadastro:hover{
+    background-color: #197f54;
+}
+#login{
+    background-color: #D9D9D9;    
+    color: #3F3F3F;
+}
+#login:hover{
+    background-color: #c2bdbd;
+}
+
+/* barra de navegação */
+nav{
+    display: flex;
+    justify-content:space-around;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+    height: 60px;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+}
+.linknav{
+    font-size: 200%;
+    color: #3F3F3F;
+    text-decoration: none;
+    padding-top: 10px;
+}
+.linknav:hover {
+    color: #20B174;
+}
+#acursos{
+    color: #20B174;
+}
+#acursos:hover{
+    color: #197f54;
+}
+#nave{
+    display: flex;
+    width: 98%;
+    margin-left: 20px;
+}
+#botaonav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* parte que vai ficar igual em todas as pags (nav, logo e botoes) */
+#cabeça{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* titulo */
+#cursos{
+    font-size: 4em;
+    display: flex;
+    color: #20B174;
+    padding-top: 3%;
+    margin-bottom: 5px;
+}
+
+/* main */
+.content{
+    display: flex;
+    margin-left: 10%;
+    flex-direction: column;
+}
+
+/* titulo em breve */
+#embreve{
+    font-size: 7em;
+    display: flex;
+    color: #20B174;
+    padding-top: 3%;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+/*Barra de Pesquisa*/
+.titfiltro {
+    font-size: 30px;
+    color: rgb(51, 49, 49);
+}
+#barradepesquisa{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-top: 20px;
+}
+#barrainput{
+    width: 46%;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    background-color: #D9D9D9;
+}
+#botaopesquisa{
+    max-width: 56px;
+    max-height: 48px;
+    border-radius: 100%;
+    border: none;
+    background-color: #20B174;
+    position: absolute;
+    margin-left: 39%;
+}
+#botaopesquisa:hover{
+    background-color: #197f54;
+}
+#lupa{
+    width: 100%;
+    height: 100%;
+}
+
+.filters {
+    list-style: none;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+   
+/* Botões selecionáveis nos filtros */
+.filter-item{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+.botaobox{
+    width: 210px; 
+    height: 40px; 
+    border-radius: 25px; 
+    border: none; 
+    font-size: 120%; 
+    cursor: pointer; 
+    background-color: #D9D9D9; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.botaocheck{
+    display: none;
+}
+.botaocheck:checked + label{
+    background-color: #197f54; 
+    color: #fff; 
+    border-radius: 25px; 
+}
+.botaocheck:hover + label{
+    background-color: #197f54; 
+    color: #fff; 
+    border-radius: 25px; 
+}
+label{
+    width: 210px; 
+    height: 40px; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    color: rgb(51, 49, 49);
+}
+
+/* Videos */
+#videos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 50px;
+}
+.videosclicar{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.capa{
+    max-width: 30%;
+    max-height: 300px;
+    background-color: #D9D9D9;
+    border-radius: 25px;
+}
+.imgcapa{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+.titulovideo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 600px;
+}
+.pvideo{
+    font-size: 40px;
+    color: #20B174;
+}
+.pvideo:hover{
+    color:#197f54;
+    cursor: pointer;
+}
+.alinkvideo{
+    text-decoration: none;
+}
+#video4{
+    margin-right: 100px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #20B174;  
+    color:#F5F3F4; 
+    bottom: 0;
+    left: 0;
+    font-size: 15px;
+    gap: 40px;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 13%;
+}
+.divfooter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#divinfos{
+    margin-right: 5%;
+}
+#afooter{
+    font-size: 15px;
+    color: #F5F3F4;
+    margin-left: 5px;
+}
+#afooter:hover{
+    color: red;
+}
+#simbolossociais{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+#simbinsta{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.divicons{
+    max-width: 80px;
+    max-height: 25px;
+    background-color: #197f54;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divicons:hover{
+    background-color: #164b35;
+}
+.icons{
+    width: 80%;
+    height: 80%;
+}
+
+#email{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+#divsimbemail{
+    margin-top: 16px;
+    max-width: 20px;
+    max-height: 18px;
+}
+#idemail{
+    width: 100%;
+    height: 100%;
+}
+hr{
+    width: 80%;
+}
+#siteby{
+    display: flex;
+    justify-content: center;
+}

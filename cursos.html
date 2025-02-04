@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cursos</title>
+		<link rel="stylesheet" href="cursos.css">
+		<link rel="icon" href="imagens/icon.png" type="image/png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	</head>
+
+    <body>
+        <div id="cabeça">
+            <div id="botaonav">
+                <div id="logo">
+                    <img class="logo" src="imagens/SOSemergenciaLOGO.png">
+                </div>
+                <div id="botoes">
+                    <a href="cadastro.html"><button id="cadastro" class="botao">Cadastro</button></a>
+                    <a href="login.html"><button id="login" class="botao">Login</button></a>
+                </div>
+            </div>
+            <div id="nave">
+                <nav>
+                    <a class="linknav" href="home.html">Home</a>
+                    <a class="linknav" href="primeirosocorros.html">Primeiros Socorros</a>
+                    <a id="acursos" class="linknav" href="cursos.html">Cursos</a>
+                    <a class="linknav" href="ferramenta.html">Ferramentas</a>
+                    <a class="linknav" href="sobre.html">Sobre</a>   
+                    <a class="linknav" href="conta.html">Conta</a>
+                </nav>
+            </div>
+        </div>
+        
+		<section class="content">
+			<h1 id="cursos">Cursos</h1>
+		
+			<h3 class="titfiltro">Buscar</h3>
+			<div id="barradepesquisa">
+				<input id="barrainput" type="text" placeholder="Pesquisar..." name="search">
+				<button id="botaopesquisa" type="submit"><img id="lupa" src="imagens/pesquisa.png"></button>
+			</div>
+		
+			<h3 class="titfiltro">Filtros</h3>
+			<aside class="filters">
+				<div class="filter-item">
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="queimaduras">
+						<label for="queimaduras">Queimaduras</label>
+					</div>
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="engasgo" name="engasgo">
+						<label for="engasgo">Engasgo</label>
+					</div>
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="parada-cardiaca" name="parada-cardiaca">
+						<label for="parada-cardiaca">Parada Cardíaca</label>
+					</div>
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="desafogamento" name="desafogamento">
+						<label for="desafogamento">Desafogamento</label>
+					</div>
+				</div>
+				<div class="filter-item">
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="fraturaossea" name="fraturaossea">
+						<label for="fraturaossea">Fratura Óssea</label>
+					</div>
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="picadas" name="picadas">
+						<label for="picadas">Picadas</label>
+					</div>
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="desmaio" name="desmaio">
+						<label for="desmaio">Desmaio</label>
+					</div>
+				</div>
+				<div class="filter-item">
+					<div class="botaobox">
+						<input class="botaocheck" type = "radio" value="Sim" id="op1" name="opção1">
+						<label for="op1">Possui Curso</label>
+					</div>					
+					<div class="botaobox">
+						<input class="botaocheck" type = "radio" value="Não" id="op2" name="opção1">
+						<label for="op2">Não possui Curso</label>
+					</div>
+				</div>
+			</aside>
+		</section>
+		<div id="videos">
+			<div class="videosclicar">
+				<div class="capa">
+					<a target="_blank" href="https://www.youtube.com/watch?v=1MtKw-uP1NM"><img class="imgcapa" src="imagens/kit_primeiros_socorros_cursos.jpg"></a>
+				</div>
+				<div class="titulovideo">
+					<a class="alinkvideo" target="_blank" href="https://www.youtube.com/watch?v=1MtKw-uP1NM"><p class="pvideo">Principais técnicas de primeiros socorros</p></a>
+				</div>
+			</div>
+			<div class="videosclicar">
+				<div class="capa">
+					<a target="_blank" href="https://www.youtube.com/watch?v=bIM8H6wPejs"><img class="imgcapa" src="imagens/queimadura_cursos.jpg"></a>
+				</div>
+				<div class="titulovideo">
+					<a class="alinkvideo" target="_blank" href="https://www.youtube.com/watch?v=bIM8H6wPejs"><p class="pvideo">Queimadura: O que é e como proceder?<p></a>
+				</div>
+			</div>
+			<div class="videosclicar">
+				<div class="capa">
+					<a target="_blank" href="https://www.youtube.com/watch?v=PyMq2iDMEkI"><img class="imgcapa" src="imagens/manobra_heimlich_cursos.jpg"></a>
+				</div>
+				<div class="titulovideo">
+					<a class="alinkvideo" target="_blank" href="https://www.youtube.com/watch?v=PyMq2iDMEkI"><p class="pvideo">Manobra de Heimlich: Como fazer da maneira mais eficaz?</p></a>
+				</div>
+			</div>
+			<div class="videosclicar">
+				<div class="capa">
+					<a target="_blank" href="https://www.youtube.com/watch?v=vXZD6h7IYkA"><img class="imgcapa" src="imagens/massagem_cardiaca_cursos.jpg"></a>
+				</div>
+				<div class="titulovideo">
+					<a class="alinkvideo" target="_blank" href="https://www.youtube.com/watch?v=vXZD6h7IYkA"><p class="pvideo" id="video4">Como fazer a massagem cardíaca</p></a>
+				</div>
+			</div>
+		</div>
+        <footer>
+            <div id="footer">
+                <div id="divinfos" class="divfooter">
+                    <p id="contato">CONTATO</p>
+                    <p id="conatosinfo">(81) 3643-9734 <br>
+                        sosemergencia@contato.br <br>
+                        Recife, Pernambuco
+                    </p>
+                </div>
+                <div id="divredes" class="divfooter">
+                    <p id="redescosiais">REDES SOCIAIS</p>
+                    <div id="simbolossociais">
+                        <div id="simbinsta">
+                            <div class="divicons">
+                                <img class="icons" src="imagens/facebookbranco.png">
+                            </div>
+                            <div class="divicons">
+                                <img class="icons" src="imagens/Insta.png">
+                            </div>
+                            <div class="divicons">
+                                <img class="icons" src="imagens/X.png">
+                            </div>
+                            <div class="divicons">
+                                <img class="icons" src="imagens/Linkedin.png">
+                            </div>
+                        </div>
+                        <div id="email">
+                            <div id="divsimbemail">
+                                <img id="idemail" src="imagens/Email.png">
+                            </div> 
+                            <p>codeignite@contato.br</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p id="siteby">Site produzido por
+                <a id="afooter" href="https://annalima03044.wixsite.com/codeignite"> Code Ignite</a>
+            </p>
+		</footer>
+
+    </body>
+
+</html>

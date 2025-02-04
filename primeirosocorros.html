@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Primeiros Socorros</title>
+        <meta charset="utf-8">
+		<link href="css/estilos.css" rel="stylesheet">
+		<link rel="stylesheet" href="primeirosocorros.css">
+		<link rel="icon" href="imagens/icon.png" type="image/png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    
+	<body>
+  		<!-- Cabeçalho -->
+
+  		<div id="cabeça">
+            <div id="botaonav">
+                <div id="logo">
+                    <img class="logo" src="imagens/SOSemergenciaLOGO.png">
+                </div>
+                <div id="botoes">
+                    <a href="cadastro.html"><button id="cadastro" class="botao">Cadastro</button></a>
+                    <a href="login.html"><button id="login" class="botao">Login</button></a>
+                </div>
+            </div>
+            <div id="nave">
+                <nav>
+                    <a class="linknav" href="home.html">Home</a>
+                    <a id="asocorros" class="linknav" href="primeirosocorros.html">Primeiros Socorros</a>
+                    <a class="linknav" href="cursos.html">Cursos</a>
+                    <a class="linknav" href="ferramenta.html">Ferramentas</a>
+                    <a class="linknav" href="sobre.html">Sobre</a>   
+                    <a class="linknav" href="conta.html">Conta</a>
+                </nav>
+            </div>
+        </div>
+
+		<!-- Filtro -->
+		<section class="content">
+			<h3 id="titulo">Primeiros Socorros</h3>
+		
+			<!--Barra de Busca-->
+			<h3 class="titfiltro">Buscar</h3>
+			<div id="barradepesquisa">
+				<input id="barrainput" type="text" placeholder="Pesquisar..." name="search">
+				<button id="botaopesquisa" type="submit"><img id="lupa" src="imagens/pesquisa.png"></button>
+			</div>
+		
+			<h3 class="titfiltro">Filtros</h3>
+			<aside class="filters">
+				<div class="filter-item">
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="queimaduras">
+						<label for="queimaduras">Queimaduras</label>
+					</div>
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="engasgo" name="engasgo">
+						<label for="engasgo">Engasgo</label>
+					</div>
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="parada-cardiaca" name="parada-cardiaca">
+						<label for="parada-cardiaca">Parada Cardíaca</label>
+					</div>
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="desafogamento" name="desafogamento">
+						<label for="desafogamento">Desafogamento</label>
+					</div>
+				</div>
+				<div class="filter-item">
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="fraturaossea" name="fraturaossea">
+						<label for="fraturaossea">Fratura Óssea</label>
+					</div>
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="picadas" name="picadas">
+						<label for="picadas">Picadas</label>
+					</div>
+					<div class="botaobox">
+						<input class="botaocheck" type="checkbox" id="desmaio" name="desmaio">
+						<label for="desmaio">Desmaio</label>
+					</div>
+				</div>
+				<div class="filter-item">
+					<div class="botaobox">
+						<input class="botaocheck" type = "radio" value="Sim" id="op1" name="opção1">
+						<label for="op1">Possui Curso</label>
+					</div>					
+					<div class="botaobox">
+						<input class="botaocheck" type = "radio" value="Não" id="op2" name="opção1">
+						<label for="op2">Não possui Curso</label>
+					</div>
+				</div>
+			</aside>
+		</section>
+
+		<!--Queimaduras-->      
+		<main>
+			<article class="card">
+
+				<div class="cardinformativo">
+					<div class="imagesinformativo">
+						<img class="psmini" src="imagens/queimadura.jpg" alt="Queimadura">
+					</div>
+					<div class="informativo">
+						<h3 class="titcard">Queimaduras</h3>
+						<p class="infoinicial">Uma queimadura é uma lesão na pele causada pelo calor, produtos químicos, eletricidade ou radiação. A gravidade da queimadura 
+							depende da profundidade da lesão e da 
+							extensão da área afetada
+						</p>
+					</div>
+				</div>
+				
+				<aside>
+					<details>
+						<summary>Ver Mais</summary>
+				
+						<!--Infos que é para ver quando clicar no Ver Mais-->
+						<section class="hideinfo">
+							<h4>Tipos de queimaduras:</h4>
+							<p><strong>Primeiro grau:</strong> Afeta apenas a camada externa da pele (epiderme). Caracteriza-se por vermelhidão, dor e leve inchaço. <br>
+							<strong>Segundo grau:</strong> Além da epiderme, atinge a camada intermediária da pele (derme). Causa bolhas, dor intensa e vermelhidão. <br>
+							<strong>Terceiro grau:</strong> Destroi todas as camadas da pele e pode atingir tecidos mais profundos, como músculos e ossos. A área afetada pode apresentar aparência branca ou carbonizada, e a dor pode ser mínima devido à destruição das terminações nervosas.</p>
+		
+							<h4>Como proceder:</h4>
+							<p>A ação rápida e correta nos primeiros socorros pode minimizar os danos causados por uma queimadura e evitar complicações. Siga estas orientações:</p>
+					
+							<ol>
+								<li><strong>Retire a fonte de calor:</strong> Afaste a pessoa da fonte de calor o mais rápido possível.</li>
+								<li><strong>Resfrie a área queimada:</strong> Coloque a área queimada sob água corrente fria por pelo menos 15 minutos. A água deve estar em temperatura ambiente e não gelada.</li>
+								<li><strong>Retire roupas e joias:</strong> Retire todas as roupas e joias da área queimada, exceto se estiverem aderidas à pele.</li>
+								<li><strong>Não fure as bolhas:</strong> As bolhas ajudam a proteger a pele e devem ser deixadas intactas.</li>
+								<li><strong>Cubra a queimadura:</strong> Utilize um pano limpo e seco para cobrir a área queimada.</li>
+								<li><strong>Alivie a dor:</strong> Se necessário, administre um analgésico de acordo com as instruções do fabricante.</li>
+								<li><strong>Procure atendimento médico:</strong> Mesmo em casos de queimaduras leves, é importante procurar um médico para avaliação e tratamento adequados.</li>
+							</ol>
+		
+							<h4>Quando procurar atendimento médico imediatamente:</h4>
+							<ul>
+								<li>Queimaduras de segundo e terceiro grau.</li>
+								<li>Queimaduras em áreas extensas do corpo.</li>
+								<li>Queimaduras em face, mãos, pés ou articulações.</li>
+								<li>Queimaduras causadas por produtos químicos ou eletricidade.</li>
+								<li>Queimaduras em crianças ou idosos.</li>
+							</ul>
+		
+							<h4>O que NÃO fazer:</h4>
+							<ul>
+								<li>Aplicar pasta de dente, manteiga ou outros produtos caseiros na queimadura.</li>
+								<li>Estourar as bolhas.</li>
+								<li>Remover a pele morta.</li>
+								<li>Usar algodão ou outros materiais que possam aderir à ferida.</li>
+							</ul>
+		
+							<h4>Observações importantes:</h4>
+							<ul>
+								<li>As informações fornecidas neste texto têm caráter informativo e não substituem a orientação médica.</li>
+								<li>Em caso de dúvida, consulte um profissional de saúde</li>
+							</ul>
+		
+							<h4>Dicas para prevenir Queimaduras</h4>
+							<ul>
+								<li>Tenha cuidado ao cozinhar e utilizar líquidos quentes.</li>
+								<li>Evite deixar crianças sozinhas perto de fogões ou fontes de calor.</li>
+								<li>Use protetor solar e roupas adequadas ao se expor ao sol.</li>
+								<li>Tenha cuidado ao manusear produtos químicos.</li>
+							</ul>
+		
+							<h4>Fontes:</h4>
+							<ul>
+								<li>Hospital 9 de Julho: https://www.h9j.com.br/blog/queimaduras/</li>
+								<li>Drauzio Varella: https://drauziovarella.uol.com.br/clinica-geral/como-tratar-queimaduras-de-acordo-com-o-grau/</li>
+							</ul>
+						</section>
+					</details>
+				</aside>
+			</article>
+		</main>
+
+		<!--Engasgo-->    
+		<main>
+			<article class="card">
+
+				<div class="cardinformativo">
+					<div class="imagesinformativo">
+						<img class="psmini" src="imagens/engasgo.jpg" alt="Engasgo">
+					</div>
+					<div class="informativo">
+						<h3 class="titcard">Engasgo</h3>
+						<p class="infoinicial">O engasgo é uma manifestação do organismo 
+							para expelir alimento ou objeto que toma um “caminho errado”, 
+							durante a deglutição (ato de engolir)
+						</p>
+					</div>
+				</div>
+				
+				<details>
+					<summary>Ver Mais</summary>
+				</details>
+			</article>
+		</main>
+
+		<!--Parada Cardíaca-->    
+		<main>
+			<article class="card">
+				<div class="cardinformativo">
+					<div class="imagesinformativo">
+						<img class="psmini" src="imagens/paradacardiaca.jpg" alt="Parada Cardíaca">
+					</div>
+					<div class="informativo">
+						<h3 class="titcard">Parada Cardíaca</h3>
+						<p class="infoinicial">Também conhecida como parada cardiorrespiratória, é a interrupção 
+							súbita da função cardíaca, da 
+							respiração e da consciência.
+						</p>
+					</div>
+				</div>
+				
+				<details>
+					<summary>Ver Mais</summary>
+				</details>
+			</article>
+		</main>
+
+		<!--Desafogamento-->    
+		<main>
+			<article class="card">
+				<div class="cardinformativo">
+					<div class="imagesinformativo">
+						<img id="imgdesafogamento" class="psmini" src="imagens/afogamento.jpg" alt="Desafogamento">
+					</div>
+					<div id="divdesafogamento" class="informativo">
+						<h3 class="titcard">Desafogamento</h3>
+						<p class="infoinicial">O afogamento é um evento grave que pode ser 
+							fatal se não for atendido rapidamente. 
+							Medidas preventivas como saber nadar e usar 
+							equipamentos de segurança são importantes para 
+							evitar afogamentos.
+						</p>
+					</div>
+				</div>
+				<details>
+				<summary>Ver Mais</summary>
+				</details>
+			</article>
+		</main>
+
+		<!--Fratura Óssea-->    
+		<main>
+			<article class="card">
+				<div class="cardinformativo">
+					<div class="imagesinformativo">
+						<img class="psmini" src="imagens/ossoquebrado.jpg" alt="Fratura Óssea">
+					</div>
+					<div class="informativo">
+						<h3 class="titcard">Fratura Óssea</h3>
+						<p class="infoinicial">Uma fratura completa ou parcial em um osso. 
+							As causas de fraturas ósseas incluem trauma, 
+							uso excessivo e doenças que enfraquecem os ossos.
+						</p>
+					</div>
+				</div>
+				<details>
+				<summary>Ver Mais</summary>
+				</details>
+			</article>
+		</main>
+
+		<!--Picadas-->
+		<main>
+			<article class="card">
+				<div class="cardinformativo">
+					<div class="imagesinformativo">
+						<img class="psmini" src="imagens/picada.jpg" alt="Picadas">
+					</div>
+					<div class="informativo">
+						<h3 class="titcard">Picadas</h3>
+						<p class="infoinicial">Uma fratura completa ou parcial em um osso. 
+							As causas de fraturas ósseas incluem trauma, 
+							uso excessivo e doenças que enfraquecem os ossos.
+						</p>
+					</div>
+				</div>
+				
+				<details>
+					<summary>Ver Mais</summary>
+				</details>
+			</article>
+		</main>
+
+		<!--Desmaio-->
+		<main id="desmaiomain">
+			<article class="card">
+				<div class="cardinformativo">
+					<div class="imagesinformativo">
+						<img class="psmini" src="imagens/desmaio.jpg" alt="Desmaio">
+					</div>
+					<div class="informativo">
+						<h3 class="titcard">Desmaio</h3>
+						<p class="infoinicial">O desmaio (síncope) é uma perda repentina 
+							e rápida de consciência em que a pessoa cai no chão ou em 
+							uma cadeira, seguida pelo retorno da consciência.
+						</p>
+					</div>
+				</div>
+	
+				<details>
+					<summary>Ver Mais</summary>
+				</details>
+			</article>
+		</main>
+
+		<footer>
+            <div id="footer">
+                <div id="divinfos" class="divfooter">
+                    <p id="contato">CONTATO</p>
+                    <p id="conatosinfo">(81) 3643-9734 <br>
+                        sosemergencia@contato.br <br>
+                        Recife, Pernambuco
+                    </p>
+                </div>
+                <div id="divredes" class="divfooter">
+                    <p id="redescosiais">REDES SOCIAIS</p>
+                    <div id="simbolossociais">
+                        <div id="simbinsta">
+                            <div class="divicons">
+                                <img class="icons" src="imagens/facebookbranco.png">
+                            </div>
+                            <div class="divicons">
+                                <img class="icons" src="imagens/Insta.png">
+                            </div>
+                            <div class="divicons">
+                                <img class="icons" src="imagens/X.png">
+                            </div>
+                            <div class="divicons">
+                                <img class="icons" src="imagens/Linkedin.png">
+                            </div>
+                        </div>
+                        <div id="email">
+                            <div id="divsimbemail">
+                                <img id="idemail" src="imagens/Email.png">
+                            </div> 
+                            <p>codeignite@contato.br</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p id="siteby">Site produzido por
+                <a id="afooter" href="https://annalima03044.wixsite.com/codeignite"> Code Ignite</a>
+            </p>
+		</footer>
+	</body>
+</html>

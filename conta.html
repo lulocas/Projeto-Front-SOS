@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Conta</title>
+		<link rel="stylesheet" href="conta.css">
+		<link rel="icon" href="imagens/icon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="cabeça">
+            <div id="botaonav">
+                <div id="logo">
+                    <img class="logo" src="imagens/SOSemergenciaLOGO.png">
+                </div>
+                <div id="botoes">
+                    <a href="login.html"><button id="login" class="botao">Sair</button></a>
+                </div>
+            </div>
+            <div id="nave">
+                <nav>
+                    <a class="linknav" href="home.html">Home</a>
+                    <a class="linknav" href="primeirosocorros.html">Primeiros Socorros</a>
+                    <a class="linknav" href="cursos.html">Cursos</a>
+                    <a class="linknav" href="ferramenta.html">Ferramentas</a>
+                    <a class="linknav" href="sobre.html">Sobre</a>   
+                    <a id="aconta" class="linknav" href="conta.html">Conta</a>
+                </nav>
+            </div>
+        </div>
+        <div id="secao1">
+            <div id="pessoal" class="secao1">
+                <h1 id="oi">Oi, Tereza</h1>
+                <div id="editarconta">
+                    <button id="editar">Editar Conta</button>
+                </div>
+            </div>
+            <div id="infos" class="secao1">
+                <div id="circulo"><img id="imgtereza" src="imagens/Tereza.png"></div>
+                <div id="sobre">
+                    <div id="titulosobre">
+                        <h4 id="nome">Estudante</h4>
+                        <p id="pronome">ela/dela</p>
+                    </div>
+                    <div id="descricao">
+                        <p>Olá, meu nome é Tereza, tenho 26 anos e atualmente sou 
+                            estudante do curso de Pedagogia na Universidade Federal de Pernambuco (UFPE).
+                            Decidi me inscrever no programa SOS Emergência com o intuito de adquirir 
+                            conhecimentos e habilidades essenciais para lidar com possíveis 
+                            situações de emergência. Meu objetivo é estar preparada para atuar de 
+                            forma eficaz em casos que envolvam familiares, colegas, 
+                            conhecidos ou futuros alunos. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="barraxp" class="secao1">
+            <h4 id="xp">XP</h4>
+            <div id="percento">
+                <div id="barra"><div id="porcentagem"></div> </div>
+                <p id="porcento">22%</p>
+            </div>
+        </div>
+        <div id="secao2">
+            <h1 id="cursos">Cursos</h1>
+            <div id="videos">
+                <div class="videosclicar">
+                    <div class="capa">
+                        <a><img class="imgcapa" src="imagens/kit_primeiros_socorros_cursos.jpg"></a>
+                    </div>
+                    <div class="titulovideo">
+                        <a><p class="pvideo" id="titletecnicas">Principais técnicas de primeiros socorros</p></a>
+                        <div class="porcentagem">
+                            <div class="barraprogresso">
+                                <div id="setentaporcento" class="barraverde"></div> 
+                            </div>
+                            <p class="numeroporcento">75%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="videosclicar">
+                    <div class="capa">
+                        <a><img class="imgcapa" src="imagens/manobra_heimlich_cursos.jpg"></a>
+                    </div>
+                    <div class="titulovideo">
+                        <a><p class="pvideo">Manobra de Heimlich: Como fazer da maneira mais eficaz?</p></a>
+                        <div class="porcentagem">
+                            <div class="barraprogresso">
+                                <div id="dezporcento" class="barraverde"></div> 
+                            </div>
+                            <p class="numeroporcento">10%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="secao3">
+            <h1 id="configuracoes">Dúvidas</h1>
+        </div>
+        <h4 id="chat">Chat de dúvidas</h4>
+        <div class="formcontainer">
+            <div class="labelinput">
+                <label for="name">Nome: </label>
+                <input id="name" type="name" required>
+            </div>
+            <div class="labelinput">
+                <label for="email">Email: </label>
+                <input id="email" type="email" required>
+            </div>
+            <div class="labelinput">
+                <label for="duvida">Dúvida: </label>
+                <textarea rows="15" cols="8" id="email"></textarea>
+            </div>
+            <div id="bottomsend">
+                <button id="botaoenviar" class="btn-enviar">Enviar</button>
+            </div>
+        </div>
+        <div id="duvidascomuns">
+            <h4 id="tituloduvidas">Dúvidas comuns</h4>
+            <div id="todascaixas">
+                <div class="caixaduvida">
+                    <h6>Os conteúdos são atualizados com frequência?</h6>
+                    <div class="details">
+                        <details>
+                            <summary>Ver Mais</summary>
+                            <section class="hideinfo">
+                                <p>Sim, nossa equipe se dedica à atualização regular dos conteúdos, 
+                                    assegurando que os usuários tenham acesso às informações mais atuais e 
+                                    eficientes sobre primeiros socorros, em conformidade com as diretrizes mais recentes da área.
+                                </p>
+                            </section>
+                        </details>
+                    </div>
+                </div>
+                
+                <div class="caixaduvida">
+                    <h6>Quando os cursos estarão disponíveis? Serei informado quando lançarem?</h6>
+                    <div class="details">
+                        <details>
+                            <summary>Ver Mais</summary>
+                            <section class="hideinfo">
+                                <p>No momento, não temos uma data definida para a disponibilização dos nossos cursos online. 
+                                    Entretanto, asseguramos que todos os membros registrados serão prontamente notificados 
+                                    via e-mail assim que os cursos estiverem disponíveis para acesso.
+                                </p>
+                            </section>
+                        </details>
+                    </div>
+                </div>
+                
+                <div class="caixaduvida">
+                    <h6>Posso me tornar um socorrista com os conteúdos da plataforma?</h6>
+                    <div class="details">
+                        <details>
+                            <summary>Ver Mais</summary>
+                            <section class="hideinfo">
+                                <p>É importante ressaltar que o SOS Emergência não se propõe a substituir cursos formais de 
+                                    Primeiros Socorros. Recomendamos que os usuários busquem treinamento 
+                                    especializado em suas respectivas regiões. Nossa plataforma serve como um complemento 
+                                    valioso, oferecendo recursos para conhecimentos básicos e revisão de conceitos essenciais.
+                                </p>
+                            </section>
+                        </details>
+                    </div>
+                </div>
+                
+                <div class="caixaduvida">
+                    <h6>Em caso de dúvidas, como posso entrar em contato?</h6> 
+                    <div class="details">
+                        <details>
+                            <summary>Ver Mais</summary>
+                            <section class="hideinfo">
+                                <p>Para esclarecer dúvidas sobre as técnicas ou a utilização da plataforma, 
+                                    recomendamos acessar nossa página de Contato ou a seção da Conta. 
+                                    Lá, você encontrará um formulário para registrar suas questões. 
+                                    Nossa equipe se compromete a fornecer uma resposta detalhada em seu 
+                                    e-mail cadastrado no prazo de até 15 dias úteis.
+                                </p>
+                            </section>
+                        </details>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <div id="footer">
+                <div id="divinfos" class="divfooter">
+                    <p id="contato">CONTATO</p>
+                    <p id="conatosinfo">(81) 3643-9734 <br>
+                        sosemergencia@contato.br <br>
+                        Recife, Pernambuco
+                    </p>
+                </div>
+                <div id="divredes" class="divfooter">
+                    <p id="redescosiais">REDES SOCIAIS</p>
+                    <div id="simbolossociais">
+                        <div id="simbinsta">
+                            <div class="divicons">
+                                <img class="icons" src="imagens/facebookbranco.png">
+                            </div>
+                            <div class="divicons">
+                                <img class="icons" src="imagens/Insta.png">
+                            </div>
+                            <div class="divicons">
+                                <img class="icons" src="imagens/X.png">
+                            </div>
+                            <div class="divicons">
+                                <img class="icons" src="imagens/Linkedin.png">
+                            </div>
+                        </div>
+                        <div id="email">
+                            <div id="divsimbemail">
+                                <img id="idemail" src="imagens/Email.png">
+                            </div> 
+                            <p>codeignite@contato.br</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p id="siteby">Site produzido por
+                <a id="afooter" href="https://annalima03044.wixsite.com/codeignite"> Code Ignite</a>
+            </p>
+		</footer>
+    </body>
+
+</html>

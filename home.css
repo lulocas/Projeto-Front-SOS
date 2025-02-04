@@ -1,0 +1,423 @@
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #F5F3F4;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    height: 100%; 
+    margin: 0;
+    font-family: Inter;
+}
+
+/* logo */
+.logo{
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#logo{
+    height: 25px;
+}
+
+/* Botoes de cadastro e login */
+#botoes{
+    display: flex;
+    margin-left: 54%;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.botao{
+    width: 210px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    font-size: 140%;
+    cursor: pointer;
+}
+#cadastro{
+    background-color: #20B174;
+    color: #F5F3F4;
+}
+#cadastro:hover{
+    background-color: #197f54;
+}
+#login{
+    background-color: #D9D9D9;    
+    color: #3F3F3F;
+}
+#login:hover{
+    background-color: #c2bdbd;
+}
+
+/* barra de navegação */
+nav{
+    display: flex;
+    justify-content:space-around;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+    height: 60px;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+}
+.linknav{
+    font-size: 200%;
+    color: #3F3F3F;
+    text-decoration: none;
+    padding-top: 10px;
+}
+.linknav:hover {
+    color: #20B174;
+}
+#ahome{
+    color: #20B174;
+}
+#ahome:hover{
+    color: #197f54;
+}
+#nave{
+    display: flex;
+    width: 98%;
+    margin-left: 20px;
+}
+#botaonav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* parte que vai ficar igual em todas as pags (nav, logo e botoes) */
+#cabeça{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* barra de pesquisa e paragrafo */
+#pesquisa{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+#paragrafo{
+    width: 800px;
+    display: flex;
+    padding-top: 80px;
+    margin-left:28%;
+}
+#textoP{
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+}
+
+#barradepesquisa{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+}
+#barrainput{
+    width: 60%;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    background-color: #D9D9D9;
+}
+#botaopesquisa{
+    max-width: 56px;
+    max-height: 100%;
+    border-radius: 100%;
+    border: none;
+    background-color: #20B174;
+    position: absolute;
+    margin-left: 57%;
+    cursor: pointer;
+}
+#botaopesquisa:hover{
+    background-color: #197f54;
+}
+#lupa{
+    width: 100%;
+    height: 100%;
+}
+
+/* titulo principais tecnicas... */
+#tituloCRP{
+    font-size: 48px;
+    color:#20B174;
+    margin-left: 10%;
+    padding-top: 40px;
+}
+
+/* Principais tecnicas */
+#principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+#tecnicas{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.tecnicas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.botaotecnica{
+    max-width: 480px;
+    max-height: 300px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(32, 177, 116, 0.2);
+    cursor: pointer;
+}
+.botaotecnica:hover{
+    background-color: rgba(43, 132, 95, 0.2);
+}
+.imgtecnicas{
+    width: 50%;
+    height: 90%;
+}
+
+
+/* telefone e massagem */
+aside{
+    width: 20%;
+    background-color: #B5B5B5;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#divbotaomassagem{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+#botaomassagem{
+    width: 80%;
+    height: 300px;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+    border: none;
+}
+#telefones{
+    width: 80%;
+    height: 400px;
+    background-color: #20B174;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    border: none;
+    justify-content: center;
+    gap: 5px;
+}
+#divteltitulo{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 400px;
+    border-radius: 25px;
+    border: none;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 20px;
+}
+#divtelefones{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.ptel{
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#divimgtel{
+    max-width: 15%;
+    max-height: 30%;
+    margin-top: 15%;
+}
+#imgtel{
+    width: 100%;
+    height: 100%;
+}
+#divnumeros{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-bottom: 50%;
+    color:#FFFFFF;
+    font-size: 20px;
+}
+
+/* titulo artigos */
+#tituloartigo{
+    font-size: 48px;
+    color:#20B174;
+    margin-left: 10%;
+    padding-top: 40px;
+}
+
+/* caixas de artigos */
+#artigos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30px;
+    margin-bottom: 5%;
+}
+.divartigos{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.textoartigo{
+    padding-bottom: 95px;
+    width: 60%;
+    padding-left: 20px;
+}
+.imageartigos{
+    background-color: #939292;
+    max-width: 30%;
+    max-height: 200px;
+    border-radius: 15px;
+}
+.imgartigos{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.h3artigo{
+    font-size: 25px;
+    color:#20B174;
+}
+.partigo{
+    font-size: 15px;
+    text-align: justify;
+    color: #3F3F3F;
+}
+
+/* imagem e botao do artigo */
+.imgbotao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+    align-content: center;
+    gap: 30px;
+}
+.botaoartigo{
+    background-color: #20B174;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.botaoartigo:hover{
+    background-color: #197f54;
+}
+.divBA{
+    padding-right: 20px;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #20B174;  
+    color:#F5F3F4; 
+    bottom: 0;
+    left: 0;
+    font-size: 15px;
+    gap: 40px;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 13%;
+}
+.divfooter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#divinfos{
+    margin-right: 5%;
+}
+#afooter{
+    font-size: 15px;
+    color: #F5F3F4;
+    margin-left: 5px;
+}
+#afooter:hover{
+    color: red;
+}
+#simbolossociais{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+#simbinsta{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.divicons{
+    max-width: 80px;
+    max-height: 25px;
+    background-color: #197f54;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divicons:hover{
+    background-color: #164b35;
+}
+.icons{
+    width: 80%;
+    height: 80%;
+}
+
+#email{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+#divsimbemail{
+    margin-top: 16px;
+    max-width: 20px;
+    max-height: 18px;
+}
+#idemail{
+    width: 100%;
+    height: 100%;
+}
+hr{
+    width: 80%;
+}
+#siteby{
+    display: flex;
+    justify-content: center;
+}
